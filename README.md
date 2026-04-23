@@ -6,9 +6,9 @@
 
 SAREnv is an open-access dataset and evaluation framework designed to support research in UAV-based search and rescue (SAR) algorithms. This toolkit addresses the critical need for standardized datasets and benchmarks in wilderness SAR operations, enabling systematic evaluation and comparison of algorithmic approaches including coverage path planning, probabilistic search, and information-theoretic exploration.
 
-##G. Whinnett's Potential Field Algorithm in SAREnv.
+**# G. Whinnett's Potential Field Algorithm in SAREnv. All credit goes to the original authors.**
 
-All relevant files can be found in the examples folder.
+All relevant files can be found in the examples folder. My additions: Potential Field algorithm based on Cooper et al.'s paper https://arc.aiaa.org/doi/abs/10.2514/6.2020-0879 with the addition of a Gaussian spike at the point of discovery of a lost person. Changed lost person generation to work in clusters.
 
 Quick start:
 ```bash
@@ -21,12 +21,12 @@ pip install -e .
 
 Running PF Files, example:
 ```bash
-python examples\
+python examples\visualize_pf_heatmap.py
+```
 
 
 
-
-## 📃 Publications
+## 📃 SAREnv main publication:
 
 * Grøntved, K. A. R., Jarabo-Peñas, A., Reid, S., Rolland, E. G. A., Watson, M., Richards, A., Bullock, S., & Christensen, A. L. (2025). SAREnv: An Open-Source Dataset and Benchmark Tool for Informed Wilderness Search and Rescue Using UAVs. Drones, 9(9), 628. https://doi.org/10.3390/drones9090628
 
